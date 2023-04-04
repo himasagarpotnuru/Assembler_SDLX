@@ -8,5 +8,3 @@ j loop
 addi $rs1, $rs2, 6
 jr done
 beqz $rs2 loop
-lw $rs1, 6($rs2)
-sw 4($rs3), 5
