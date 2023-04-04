@@ -1,0 +1,5 @@
+add,$r1, $r2, $r3
+done:add $r2, $r4, $r6
+bnez $r10  done
+loop:addi $r1 $r2 4
+j loop
