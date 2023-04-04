@@ -1,5 +1,12 @@
-add,$r1, $r2, $r3
-done:add $r2, $r4, $r6
-bnez $r10  done
-loop:addi $r1 $r2 4
+add,$r1, $r2, $rs3
+
+
+done:   add $r2, $r4, $r6
+  bnez $r10  done
+loop:addi $r1 $r2   4
 j loop
+addi $rs1, $rs2, 6
+jr done
+beqz $rs2 loop
+lw $rs1, 6($rs2)
+sw 4($rs3), 5
